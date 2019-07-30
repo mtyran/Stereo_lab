@@ -1,4 +1,4 @@
-public class Casette extends Component {
+public class Casette extends Component implements IPlay{
 
     private int numTapes;
 
@@ -9,5 +9,9 @@ public class Casette extends Component {
 
     public int getNumTapes(){
         return numTapes;
+    }
+
+    public void play(String action){
+        this.actionTaken = action;
     }
 }

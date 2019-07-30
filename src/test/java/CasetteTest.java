@@ -26,4 +26,10 @@ public class CasetteTest {
     public void canGetNumTapes() {
         assertEquals(2, casette.getNumTapes());
     }
+
+    @Test
+    public void canPlayCasette() {
+        casette.play("Casette is playing.");
+        assertEquals("Casette is playing.", casette.getActionTaken());
+    }
 }
